@@ -1,0 +1,13 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Id</th>
+      <th scope="col">Name</th>
+      <th scope="col">Price</th>
+      <th scope="col">Amount</th>
+    </tr>
+  </thead>
+  <tbody>
+    <app-product *ngFor="let p of data" [product]="p"></app-product>
+  </tbody>
+</table>
