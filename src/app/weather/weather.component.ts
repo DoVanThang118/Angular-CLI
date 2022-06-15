@@ -1,40 +1,35 @@
 import {Component} from "@angular/core";
-// @ts-ignore
 import {IWeather} from "../interfaces/weather.interface";
-import {HttpClient, HttpParams} from "@angular/common/http";
+import {WeatherService} from "../services/weather.service";
+import {HttpClient} from "@angular/common/http";
 
 @Component({
   selector: 'app-weather',
   templateUrl: './weather.component.html'
 })
 export class WeatherComponent {
-
   // @ts-ignore
   data :IWeather = null;
 
-  constructor(private httpClient: HttpClient) {
+  cityCode: string = 'hanoi';
+  constructor(private service: WeatherService) {
   }
 
   ngOnInit(){
-    this.getData('hanoi');
+    this.getData();
   }
 
-  getData(city: string){
-    var parameters = new HttpParams();
-    parameters = parameters.append('q',city);
-    parameters = parameters.append('appid','09a71427c59d38d6a34f89b47d75975c');
-    parameters = parameters.append('units','metric');
-    this.httpClient.get<IWeather>("https://api.openweathermap.org/data/2.5/weather", {params: parameters})
+  getData(){
+    this.service.currentWeather(this.cityCode)
       .subscribe( value=>{this.data = value;})
   }
 
   hanoi(){
-    this.getData('hanoi');
+    this.cityCode = 'hanoi';
+    this.getData();
   }
   london(){
-    this.getData('london');
-  }
-  paris(){
-    this.getData('paris')
+    this.cityCode = 'london';
+    this.getData();
   }
 }

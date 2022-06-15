@@ -1,15 +1,15 @@
-import { Component } from '@angular/core';
-import {IProduct} from "../interfaces/product.interfaces";
+import {Component} from "@angular/core";
+import {IProduct} from "../interfaces/product.interface";
 
 @Component({
   selector: 'app-products',
   templateUrl: './products.component.html',
+  styleUrls: []
 })
 export class ProductsComponent {
   data: IProduct[] = [
-    { Id: 1 , ProductName: 'Iphone X' , Price: 1200 , Qty: 23 },
-    { Id: 2 , ProductName: 'Iphone Xr' , Price: 2300 , Qty: 43 },
-    { Id: 3 , ProductName: 'Iphone Xs' , Price: 3400 , Qty: 43 },
-    { Id: 4 , ProductName: 'Iphone Xs Max' , Price: 5600 , Qty: 21 }
+    { Id: 1 , ProductName: 'SP1' , Price:10000, Qty: 2},
+    { Id: 2 , ProductName: 'SP2' , Price:20000, Qty: 4},
+    { Id: 3 , ProductName: 'SP3' , Price:30000, Qty: 6},
   ];
 }
