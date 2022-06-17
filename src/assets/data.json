@@ -1,0 +1,90 @@
+{
+  "status": 200,
+  "message": "Success",
+  "data": {
+    "categories": [
+      {
+        "name": "Favorites",
+        "childs": [
+          {
+            "name": "Inbox"
+          },
+          {
+            "name": "Sent items"
+          }
+        ]
+      },
+      {
+        "name": "John",
+        "childs": [
+          {
+            "name": "Inbox"
+          },
+          {
+            "name": "Drafts"
+          },
+          {
+            "name": "Deleted Items"
+          },
+          {
+            "name": "Sent items"
+          },
+          {
+            "name": "Outbox"
+          }
+        ]
+      }
+    ],
+    "mails": [
+      {
+        "subject": "Demo Subject",
+        "shortContent": "Content mail...",
+        "userName": "John@gmail.com",
+        "category": "John",
+        "child": "Inbox"
+      },
+      {
+        "subject": "Demo Subject",
+        "shortContent": "Content mail...",
+        "userName": "Favorites@gmail.com",
+        "category": "John",
+        "child": "Drafts"
+      },
+      {
+        "subject": "Demo Subject",
+        "shortContent": "Content mail...",
+        "userName": "Fasdvsdcdcvorites@gmail.com",
+        "category": "John",
+        "child": "Deleted Items"
+      },
+      {
+        "subject": "Demo Subject",
+        "shortContent": "Content mail...",
+        "userName": "Favorites@gmail.com",
+        "category": "John",
+        "child": "Sent items"
+      },
+      {
+        "subject": "Demo Subject",
+        "shortContent": "Content mail...",
+        "userName": "Favorites@gmail.com",
+        "category": "John",
+        "child": "Outbox"
+      },
+      {
+        "subject": "Demo Subject",
+        "shortContent": "Content mail...",
+        "userName": "Favsdfdsfsdfsdorites@gmail.com",
+        "category": "Favorites",
+        "child": "Inbox"
+      },
+      {
+        "subject": "Demo Subject",
+        "shortContent": "Content mail...",
+        "userName": "Favomkukytjyhthrites@gmail.com",
+        "category": "v",
+        "child": "Sent items"
+      }
+    ]
+  }
+}
