@@ -12,6 +12,7 @@ import {FormsModule} from "@angular/forms";
 import {RouterModule, Routes} from "@angular/router";
 import {DataComponent} from "./data/data.component";
 import {Assigment1Component} from "./assigment1/assigment1.component";
+import {Assigment2Component} from "./assigment2/assigment2.component";
 
 const appRoutes: Routes = [
   {
@@ -33,7 +34,8 @@ const appRoutes: Routes = [
     ProductsComponent,ProductComponent,
     WeatherComponent,
     DataComponent,
-    Assigment1Component
+    Assigment1Component,
+    Assigment2Component
   ],
   imports: [
     BrowserModule,

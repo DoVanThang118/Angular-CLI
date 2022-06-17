@@ -1,0 +1,68 @@
+{
+  "status": 200,
+  "message": "Success",
+  "data": {
+    "navs": [
+      {
+        "icon": "bi bi-clipboard-data-fill",
+        "name": "To Do"
+      },
+      {
+        "icon": "bi bi-arrow-clockwise",
+        "name": "In Progress"
+      },
+      {
+        "icon": "bi bi-eye-fill",
+        "name": "In Review"
+      },
+      {
+        "icon": "bi bi-clipboard-check-fill",
+        "name": "Done"
+      }
+    ],
+    "missions": [
+      {
+        "task": "1",
+        "job": "Analyze...",
+        "nav": "To Do"
+      },
+      {
+        "task": "2",
+        "job": "Arrange...",
+        "nav": "To Do"
+      },
+      {
+        "task": "3",
+        "job": "Show...",
+        "nav": "In Progress"
+      },
+      {
+        "task": "4",
+        "job": "Enhance...",
+        "nav": "In Progress"
+      },
+      {
+        "task": "5",
+        "job": "Fix...",
+        "nav": "In Review"
+      },
+      {
+        "task": "6",
+        "job": "Improve...",
+        "nav": "In Review"
+
+      },
+      {
+        "task": "7",
+        "job": "Test...",
+        "nav": "Done"
+
+      },
+      {
+        "task": "8",
+        "job": "Storied...",
+        "nav": "Done"
+      }
+    ]
+  }
+}
